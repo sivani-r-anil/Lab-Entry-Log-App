@@ -36,12 +36,12 @@ const AddLog = () => {
             (response) => {
 
                 console.log(response.data)
-                alert("Flight added suceessfully")
+                alert("Log added suceessfully")
             }
 
         ).catch((error) => {
             console.log(error.response)
-            alert("Failed to add Flight")
+            alert("Failed to add Log")
         })
 
 
@@ -58,8 +58,8 @@ const AddLog = () => {
                         <div className="row g-3">
                             <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
-                                <label htmlFor="" className="form-label" name="name" value={input.name} onChange={inputHandler}>Name</label>
-                                <input type="text" className="form-control" />
+                                <label htmlFor="" className="form-label" >Name</label>
+                                <input type="text" className="form-control" name="name" value={input.name} onChange={inputHandler} />
 
                             </div>
                             <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
